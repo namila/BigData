@@ -37,7 +37,7 @@ public class TopGenreInRegion {
 				region = null;
 			}
 
-			if (region != null) {
+			if (region!=null && region.isEmpty()==false) {
 				context.write(new Text(region), new Text(jsonString));
 			}
 		}
