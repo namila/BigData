@@ -34,7 +34,7 @@ public class TopShowInRegion {
 				country=null;
 			}
 			
-			if(country!=null){
+			if(country!=null && country.isEmpty()==false){
 				context.write(new Text(country),new Text(jsonString));
 				
 			}
